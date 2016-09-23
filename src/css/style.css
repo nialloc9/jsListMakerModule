@@ -1,0 +1,42 @@
+#addToListModule{
+    width: 250px;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+#addToListModule input{
+    height: 30px;
+    border-color: blanchedalmond;
+    font-weight: bold;
+    width: 150px;
+}
+
+#addToListModule button{
+    height: 35px;
+    background-color: darkturquoise;
+    width: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#addToListModule h1{
+    font-size: 30px;
+}
+
+#addToListModule ul{
+    list-style: none;
+    font-size: 16px;
+}
+
+#addToListModule li{
+    padding-bottom: 5px;
+}
+
+#addToListModule .del{
+    font-size: 8px;
+    color: gray;
+    cursor: pointer;
+}
+

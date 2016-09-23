@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- TITLE -->
+    <title>To List Module</title>
+
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+</head>
+<body>
+
+<div id="testModule">
+
+</div>
+<div id="addToListModule">
+    <h1>List</h1>
+    <input placeholder="Item 1" type="text">
+    <button id="addToListBtn">Add</button>
+    <ul id="list">
+        <!-- add to list template html -->
+        <script id="addToListTemplate" type="text/template">
+            {{#list}}
+            <li>
+                <span>{{.}}</span>
+                <i class="del">X</i>
+            </li>
+            {{/list}}
+        </script>
+    </ul>
+</div>
+
+
+<!-- toList minified -->
+<script src="toList.min.js"></script>
+</body>
+</html>
