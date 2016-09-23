@@ -55,6 +55,19 @@ This a list maker made using a revealing js pattern. It is created to be reused 
           </body>
           </html>
 
+
+##Api
+
+.subscribe(functionName); --> Allows other modules to listen for changes in the list data
+
+.unsubscribe(functionName); --> Unsubscribe module from listening for changes in the list data. (Must be same function name as used in subscribe)
+
+.addToList(item); --> Manuelly add string data to the list.
+
+.deleteFromList(index); -> manuelly remove index of index from the list. (takes a number starting at 0)
+
+.returnList(); --> returns the data in the list in an array.
+
 ## Deployment
 
 Use minified file for production sites.
