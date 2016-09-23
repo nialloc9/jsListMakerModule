@@ -56,12 +56,12 @@ This a list maker made using a revealing js pattern. It is created to be reused 
           </html>
 
 
-##Instructions to use with module loader
+##Instructions to use with module loader (if you want to use API)
 1. Require the files pubsub.js and toList.module.js from src/js/module/
 
 2. Consult dependencies below and install each of them.
 
-##Api for module loader
+##Api for module loader 
 
 .subscribe(functionName); --> Allows other modules to listen for changes in the list data
 
