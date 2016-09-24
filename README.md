@@ -1,11 +1,12 @@
 # jsListMakerModule
 This a list maker made using a revealing js pattern. It is created to be reused anywhere a developer needs to allow the user to create a list.
 
-## Getting Started
+## Getting Started (using module loader)
 
-1.Add file 'toList.min.js' to project.
+1.Add file 'src/js/modile/toList.module.js' and 'src/js/modile/pubsub.js' to project.
 2.Add css file to style module. (default styling can be found in src/css/style.css)
-2.Include html in body where you want list to appear.
+3.Load modules into project.
+4.Include html in body where you want list to appear.
 
         <div id="addToListModule">
             <h1>List</h1>
@@ -56,12 +57,31 @@ This a list maker made using a revealing js pattern. It is created to be reused 
           </html>
 
 
-##Instructions to use with module loader (if you want to use API)
-1. Require the files pubsub.js and toList.module.js from src/js/module/
+##Getting started (no module loader)
+1. Include jquery.js and moustache.js in your project.
 
-2. Consult dependencies below and install each of them.
+2. Inlude src/js/toListNoModuleLoader.js to your project.
 
-##Api for module loader 
+4.Include html in body where you want list to appear.
+
+        <div id="addToListModule">
+            <h1>List</h1>
+            <input placeholder="Item 1" type="text">
+            <button id="addToListBtn">Add</button>
+            <ul id="list">
+                <!-- add to list template html -->
+                <script id="addToListTemplate" type="text/template">
+                    {{#list}}
+                    <li>
+                        <span>{{.}}</span>
+                        <i class="del">X</i>
+                    </li>
+                    {{/list}}
+                </script>
+            </ul>
+        </div>
+        
+##Api
 
 .subscribe(functionName); --> Allows other modules to listen for changes in the list data
 
@@ -73,15 +93,10 @@ This a list maker made using a revealing js pattern. It is created to be reused 
 
 .returnList(); --> returns the data in the list in an array.
 
-## Deployment
-
-Use minified file for production sites.
-
 ## Dependencies
 
 * jQuery
 * MustacheJs
-* Webpack
 
 ## Authors
 
