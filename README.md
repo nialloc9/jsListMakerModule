@@ -65,7 +65,9 @@ This a list maker made using a revealing js pattern. It is created to be reused 
 
 2. Inlude src/js/toListNoModuleLoader.js to your project.
 
-3.Include html in body where you want list to appear.
+3. Add css file to style module. (default styling can be found in src/css/style.css)
+
+4. Include html in body where you want list to appear.
 
         <div id="addToListModule">
             <h1>List</h1>
