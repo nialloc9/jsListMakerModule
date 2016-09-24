@@ -4,8 +4,11 @@ This a list maker made using a revealing js pattern. It is created to be reused 
 ## Getting Started (using module loader)
 
 1.Add file 'src/js/modile/toList.module.js' and 'src/js/modile/pubsub.js' to project.
+
 2.Add css file to style module. (default styling can be found in src/css/style.css)
+
 3.Load modules into project.
+
 4.Include html in body where you want list to appear.
 
         <div id="addToListModule">
@@ -62,7 +65,7 @@ This a list maker made using a revealing js pattern. It is created to be reused 
 
 2. Inlude src/js/toListNoModuleLoader.js to your project.
 
-4.Include html in body where you want list to appear.
+3.Include html in body where you want list to appear.
 
         <div id="addToListModule">
             <h1>List</h1>
