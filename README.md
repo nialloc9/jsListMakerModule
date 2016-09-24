@@ -80,7 +80,40 @@ This a list maker made using a revealing js pattern. It is created to be reused 
                 </script>
             </ul>
         </div>
+
+###Example installation (toListNoModuleLoader.js)
         
+        <!DOCTYPE html>
+        <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Test</title>
+                    <link href="style.css" type="text/css" rel="stylesheet">
+                </head>
+                <body>
+                <div id="addToListModule">
+                    <h1>List</h1>
+                    <input placeholder="Item 1" type="text">
+                    <button id="addToListBtn">Add</button>
+                    <ul id="list">
+                        <!-- add to list template html -->
+                        <script id="addToListTemplate" type="text/template">
+                            {{#list}}
+                            <li>
+                                <span>{{.}}</span>
+                                <i class="del">X</i>
+                            </li>
+                            {{/list}}
+                        </script>
+                    </ul>
+                </div>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+                <script src="toListNoModuleLoader.js"></script>
+                </body>
+        </html>
+
 ##Api
 
 .subscribe(functionName); --> Allows other modules to listen for changes in the list data
